@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function kiemtra(account) {
+        mau=/^[_a-z0-9]{6,}$/;
+        if (mau.test(account)){
+            console.log(account+": "+ "account hop le")
+        }else {
+            console.log(account+ ": "+"account khong hop le")
+        }
+    }
+    let mau1="123abc_";
+    let mau2="_abc123";
+    let mau3="______";
+    let mau4="123456";
+    let mau5="asdfgg";
+    let mau6="@";
+    let mau7="12345";
+    let mau8="1234_";
+    let mau9="abcde";
+    kiemtra(mau1);
+    kiemtra(mau2);
+    kiemtra(mau3);
+    kiemtra(mau4);
+    kiemtra(mau5);
+    kiemtra(mau6);
+    kiemtra(mau7);
+    kiemtra(mau8);
+    kiemtra(mau9);
+</script>
+</body>
+</html>
